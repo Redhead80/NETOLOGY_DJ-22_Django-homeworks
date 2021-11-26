@@ -14,6 +14,8 @@ class Project(models.Model):
         auto_now=True
     )
 
+    def __str__(self):
+        return self.name
 
 class Measurement(models.Model):
     """Измерение температуры на объекте."""
